@@ -1,10 +1,10 @@
 
 import './App.module.scss';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Services from './components/Services/Services';
-import Work from './components/Work/Work';
-import Contact from './components/Contact/Contact';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
+import Work from './pages/Work/Work';
+import Contact from './pages/Contact/Contact';
 import {
   Route,
   Routes,
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-            <Route exact path="/home" element={ <Home/>}>
+            <Route exact path="/" element={ <Home/>}>
             </Route>
             <Route exact path="/about" element={ <About/>}>
             </Route>

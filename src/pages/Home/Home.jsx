@@ -1,6 +1,7 @@
 import React from 'react'
+import Navbar from '../Header/Navbar'
 import  "./home.scss"
-import Navbar from '../Header/Navbar';
+
 function Home() {
   return (
     <div className='home'>
@@ -9,6 +10,7 @@ function Home() {
           <h2>HELLO MY NAME IS</h2>
           <h1>VISHNUPRIYA.</h1>
           <p>Creative UI/UX Developer Based in india</p>
+          <button type='button'>Button</button>
         </div>
     </div>
   )
