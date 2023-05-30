@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    background: #f6f6f6;
+    
+    ul{
+      display: flex;
+    .item{
+     list-style-type: none;
+     margin: 0 10px;
+    }
+    .link{
+     color:#666666;
+     font-size: 13px;
+     font-family: 'Roboto', sans-serif;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-decoration: none;
+     margin: 0;
+    }
+  }
+
+}
+ 
