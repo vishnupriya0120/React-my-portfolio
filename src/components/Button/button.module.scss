@@ -1,0 +1,35 @@
+$primary:#393939;
+
+.button {
+    color:#fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+    width: auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.45;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    min-width: 127px;
+    text-decoration: none !important;
+    font-family: inherit;
+    height: 40px;
+    margin-top: 30px;
+    &.sm {
+        padding:10px 25px;
+        width:100%;
+        max-width: 150px;
+    }
+    &.md{
+        width:100%;
+        max-width: 200px;
+    }
+}
+
+.primary{
+    background-color: $primary;
+}

@@ -1,0 +1,368 @@
+$primary: #007bff;
+$danger: #dc3545;
+$success: #28a745;
+$warning: #ffc107;
+$info: #ddd;
+$dark: #000;
+$light: #fff;
+$seconday: rgba(0, 123, 255, 0.06);
+$hoverPrimary: #0056B3;
+$hoverSecondary: #007BFF;
+.disable {
+  pointer-events: none;
+  cursor: default;
+}
+
+.button {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: auto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.45;
+  text-align: center;
+  outline: none;
+  min-width: 127px;
+  text-decoration: none !important;
+  font-family: inherit;
+  height: 40px;
+  transition: all ease-in-out 0.5s;
+  &.full {
+    width: 100%;
+  }
+  &.outline {
+    background-color: transparent;
+  }
+  &.round {
+    border-radius: 6px;
+  }
+  &.xs {
+    font-size: 80%;
+    padding: 5px 10px;
+    min-width: 50px;
+  }
+  &.sm {
+    padding: 10px 25px;
+    min-width: 70px;
+    font-size: 90%;
+  }
+
+  &.md {
+    padding: 10px 25px;
+    font-size: 100%;
+  }
+
+  &.lg {
+    padding: 10px 35px;
+    font-size: 110%;
+    min-width: 200px;
+    height: 50px;
+  }
+  &.xl {
+    padding: 10px 35px;
+    font-size: 120%;
+    min-width: 200px;
+    height: 60px;
+  }
+  &.nopadding {
+    padding: 0;
+    font-size: 100%;
+    height: 20px;
+  }
+  &.titleRight {
+    padding: 5px 20px;
+    min-width: 150px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #ffffff;
+  }
+  i + *,img + *, svg + * {
+      margin-left: 8px;
+      display: block;
+  }
+
+  &.right {
+    flex-direction: row-reverse;
+    i,
+    img {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+  }
+  &.transparent {
+    background: transparent;
+    min-width: 0;
+    font-weight: 500;
+    &:hover {
+      background: transparent;
+    }
+  }
+  &.icon {
+    padding: 5px;
+    min-width: 0;
+    i,
+    img {
+      margin: 0;
+    }
+  }
+  &.spinner {
+    i,
+    img {
+      margin: 0;
+      animation: spinnerAnimation 2s infinite linear;
+      display: block;
+    }
+  }
+  &.link {
+    display: inline;
+    padding: 0;
+    background: transparent;
+  }
+}
+
+@keyframes spinnerAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.primary {
+  background-color: $primary;
+  .loading svg path {
+    stroke: #ffffff;
+  }
+  &:hover {
+    background-color: $hoverPrimary;
+    color: #fff;
+  }
+  &.outline {
+    border-color: $primary;
+    color: $primary;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &.transparent {
+    color: $primary;
+    .loading svg path, svg path {
+      stroke: $primary;
+    }
+    &:hover {
+      svg path {
+        stroke: $hoverPrimary;
+      }
+    }
+    &.disable {
+      background: transparent;
+      filter: grayscale(1);
+      opacity: 0.3;
+    }
+  }
+  &.disable {
+    background: #B3D7FF;
+    pointer-events: none;
+  }
+}
+
+.secondary {
+  background-color: $seconday;
+  color: $primary;
+  .loading svg path {
+    stroke: $primary;
+  }
+  &:hover {
+    background-color: $hoverSecondary;
+    color: $light;
+    a {
+      color: $light;
+    }
+    .loading svg path {
+      stroke: #ffffff;
+    }
+  }
+  &.outline {
+    border-color: $seconday;
+    color: $primary;
+  }
+  &.transparent {
+    color: $primary;
+  }  
+  &.disable {
+    background: #E7E9F0;
+  }
+}
+
+.danger {
+  background-color: $danger;
+  .loading svg path {
+    stroke: $light;
+  }
+  &.outline {
+    border-color: $danger;
+    color: $danger;
+    .loading svg path {
+      stroke: $danger;
+    }
+  }
+  &.transparent {
+    color: $danger;
+    background: transparent;
+    .loading svg path {
+      stroke: $danger;
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.warning {
+  background-color: $warning;
+  .loading svg path {
+    stroke: $light;
+  }
+  &.outline {
+    border-color: $warning;
+    color: $warning;
+    .loading svg path {
+      stroke: $warning;
+    }
+  }
+  &.transparent {
+    color: $warning;
+    .loading svg path {
+      stroke: $warning;
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.success {
+  background-color: $success;
+  .loading svg path {
+    stroke: $light;
+  }
+  &.outline {
+    border-color: $success;
+    color: $success;
+    .loading svg path {
+      stroke: $success;
+    }
+  }
+  &.transparent {
+    color: $success;
+    .loading svg path {
+      stroke: $success;
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.info {
+  background-color: $info;
+  color: #666;
+  &.outline {
+    border-color: $info;
+    color: $info;
+    .loading svg path {
+      stroke: $info;
+    }
+  }
+  &.transparent {
+    color: $info;
+    .loading svg path {
+      stroke: $info;
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.dark {
+  background-color: $dark;
+  color: $light;
+  .loading svg path {
+    stroke: $light;
+  }
+  &.outline {
+    border-color: $info;
+    color: $dark;
+    .loading svg path {
+      stroke: $dark;
+    }
+  }
+  &.transparent {
+    color: rgba(16, 31, 79, 0.45);
+    padding-left: 0;
+    .loading svg path {
+      color: rgba(16, 31, 79, 0.45);
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.light {
+  background-color: $light;
+  color: #666;
+  &.outline {
+    border-color: $light;
+    color: $light;
+    .loading svg path {
+      stroke: $light;
+    }
+  }
+  &.transparent {
+    color: #666;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.button + .button {
+  margin-left: 16px;
+}
+
+[disabled] {
+  background: #B3D7FF;
+  color: #ffffff;
+  pointer-events: none;
+}
+.loading {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin: 0 7px 0 0;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

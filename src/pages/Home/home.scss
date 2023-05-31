@@ -5,18 +5,33 @@
 .home{
     background: #f6f6f6;
     .home-content{
+       display: flex;
        width:100%;
-       max-width: 1200px;
+    //    max-width: 1500px;
        margin: 0 auto;
-       padding: 150px 0;
+       min-height: 90vh;
+    }
+    .home-text{
+        display: flex;
+        padding: 0 50px;
+        flex-direction: column;
+        justify-content: center;
+        width:50%;
     }
     h2{
         color:#666666;
-        font-size: 17px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     h1{
-        font-size: 50px;
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        margin:10px 0;
     }
 
 }
