@@ -13,7 +13,7 @@ return (
     <div className='skills'>
       {skillsData.map((skill) => (
         <div  className='skill-item' key={skill.id}>
-          <p>{skill.name}</p>
+          <span><p>{skill.name}</p><p>{skill.progress}%</p></span>
           <div className="progress-bar">
             <div className="progress" style={{ width: `${skill.progress}%` }}></div>
           </div>

@@ -1,9 +1,11 @@
 .services-container{
-    padding: 110px 0;
+    padding: 110px 30px;
     background-color: #f6f6f6;
     .services-content{
-        width:100%;
-        max-width: 1780px;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0 0;
+       
     }
         h2{
             font-family:'Montserrat', sans-serif;

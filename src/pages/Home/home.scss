@@ -10,28 +10,39 @@
     //    max-width: 1500px;
        margin: 0 auto;
        min-height: 90vh;
+       align-items: center;
+       justify-content: space-around;
+       .icon-text-container{
+        display: flex;
+       }
     }
     .home-text{
         display: flex;
         padding: 0 50px;
         flex-direction: column;
         justify-content: center;
-        width:50%;
-    }
-    h2{
-        color:#666666;
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-    }
-    h1{
+         h2{
+            color:#666666;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+       } 
+       h1{
         font-size: 60px;
         font-family: 'Roboto', sans-serif;
-    }
-    p{
+      } 
+      p{
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
         margin:10px 0;
+      }
+    }
+    .profile-image{
+        .image-style{
+            width:100%;
+            max-width: 400px;
+            border-radius: 25%;
+        }
     }
 
 }

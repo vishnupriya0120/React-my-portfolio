@@ -13,7 +13,7 @@ function About() {
           <Button btnSize='md' label='DOWNLOAD CV'/>
         </div>
         <div className="about-skill">
-          <h3>SKILLS</h3>
+          {/* <h3>SKILLS</h3> */}
             <Skills/>
         </div>
       </div>
