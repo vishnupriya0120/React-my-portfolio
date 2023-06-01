@@ -1,0 +1,30 @@
+body{
+    overflow-x: hidden;
+    padding:0;
+    margin:0;
+}
+
+$xs:375px;
+$sm:575px;
+$md:915px;
+$lg:1200px;
+$xlg:2100px;
+
+.container{
+    width:100%;
+    padding:0 15px;
+    margin:0 auto;
+    max-width: 1800px;
+    @media (max-width:$lg) {
+        max-width: 1300px;
+    }
+
+    
+}
+h2{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color:#000;
+}

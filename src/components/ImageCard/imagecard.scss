@@ -1,0 +1,51 @@
+.imagecard {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .imagecard .image {
+    width: 100%;
+    height: auto;
+    transition: transform 1.5s;
+  }
+  
+  .imagecard:hover .image {
+    transform: scale(1.1);
+  }
+  
+  .imagecard .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .imagecard:hover .overlay {
+    opacity: 1;
+  }
+  
+  .imagecard .text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .imagecard .link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .imagecard .link:hover {
+    text-decoration: underline;
+  }
+  

@@ -14,6 +14,7 @@
        justify-content: space-around;
        .icon-text-container{
         display: flex;
+        width:50%;
        }
     }
     .home-text{
@@ -26,6 +27,7 @@
             font-size: 18px;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
+            text-align: left;
        } 
        h1{
         font-size: 60px;
@@ -37,7 +39,12 @@
         margin:10px 0;
       }
     }
+    .image-container{
+        width:50%
+    }
     .profile-image{
+        display: flex;
+        justify-content: center;
         .image-style{
             width:100%;
             max-width: 400px;

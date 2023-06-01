@@ -15,6 +15,7 @@ function Home() {
   return (
     <div className='home'>
       <Navbar/>
+      <div className="container">
         <div className='home-content'>
           <div className="icon-text-container">
             <SocialIconsContainer/>
@@ -25,12 +26,13 @@ function Home() {
               <Button label="Let's Talk"/>
             </div>
           </div>
-          
-          <div className="profile-image">
-            <ImageComponent image={MyImage} className="image-style" />
+          <div className="image-container">
+            <div className="profile-image">
+              <ImageComponent image={MyImage} className="image-style" />
+            </div>
           </div>
-          
         </div>
+      </div>
       <About/>
       <Services/>
       <Work/>
