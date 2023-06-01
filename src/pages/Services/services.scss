@@ -1,6 +1,6 @@
 .services-container{
     padding: 110px 0;
-    background-color: #f6f6f6;
+    background: #0b101e;
     .services-content{
         display: flex;
         justify-content: center;
@@ -11,11 +11,4 @@
         }
        
     }
-        h2{
-            font-family:'Montserrat', sans-serif;
-            text-align: center;
-            font-size: 32px;
-            font-weight: 700;
-            color:#000;
-        }
 }

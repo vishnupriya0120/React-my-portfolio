@@ -26,11 +26,11 @@ function Home() {
               <Button label="Let's Talk"/>
             </div>
           </div>
-          <div className="image-container">
+          {/* <div className="image-container">
             <div className="profile-image">
               <ImageComponent image={MyImage} className="image-style" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <About/>

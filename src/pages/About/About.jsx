@@ -5,7 +5,7 @@ import Button from '../../components/Button/Button'
 function About() {
   return (
     <div className='about-container'>  
-      <h2>ABOUT ME</h2>
+      <h2> ABOUT ME</h2>
       <div className="container">
           <div className="about-content">
             <div className="about-text">

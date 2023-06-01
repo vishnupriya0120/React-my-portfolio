@@ -9,7 +9,7 @@ import "./services.scss"
 function Services() {
   return (
     <div className='services-container'>
-      <h2>SERVICES</h2>
+      <h2>MY SERVICES </h2>
       <div className="container">
         <div className="services-content">
           <div className="box">

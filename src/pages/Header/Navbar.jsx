@@ -9,16 +9,16 @@ import "./navbar.scss"
           <Link to="/home" className='link'>Logo</Link>
             <ul>
               <li className="item">
-                <Link to="/about" className="link">About</Link> 
+                <Link to="/about" className="link">01. About</Link> 
               </li>
               <li className="item">
-                <Link to="/services" className='link'>Services</Link> 
+                <Link to="/services" className='link'>02. Services</Link> 
               </li>
               <li className="item">
-                <Link to="/work" className='link'>Work</Link> 
+                <Link to="/work" className='link'>03. Work</Link> 
               </li>
               <li className="item">
-                <Link to="contact" className='link'>Contact</Link>
+                <Link to="contact" className='link'>04. Contact</Link>
               </li>
             </ul>
         </nav>
