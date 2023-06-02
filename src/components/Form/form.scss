@@ -1,0 +1,39 @@
+.form{
+    max-width: 900px;
+    margin:0 auto;
+    padding: 50px  0 0;
+   .userform{
+        display: flex;
+        flex-direction: column;
+        input,textarea{
+            background: rgb(109 202 191 / 10%);
+            padding: 15px 10px;
+            margin:15px 0;
+            border-radius: 5px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-color:#6dcabf;
+            font-family: 'Roboto Mono', monospace;
+            color: rgb(155, 150, 150);
+            font-size: 16px;
+        }
+        textarea{
+            padding: 10px 10px 85px;
+            margin: 15px 0 35px;
+        }
+
+        button{
+            font-family: 'Roboto Mono', monospace;
+            background: transparent;
+            border: 1px solid #6dcabf;
+            width:30%;
+            font-size: 17px;
+            font-weight: bold;
+            color:#e6e6e6;
+            margin: 0 auto;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+   }
+}

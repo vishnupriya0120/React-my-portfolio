@@ -1,3 +1,4 @@
+
 $primary:#6dcabf;
 
 
@@ -7,6 +8,7 @@ $primary:#6dcabf;
     align-items: center;
     justify-content: center;
     border: 1px solid transparent;
+    font-family: 'Roboto Mono', monospace;
     cursor: pointer;
     width: auto;
     font-weight: 600;
@@ -31,6 +33,13 @@ $primary:#6dcabf;
     }
 }
 
-.primary{
+
+.solid{
     background-color: $primary;
+}
+.outline{
+    border:1px solid #6dcabf;
+    border-radius: 5px;
+    background-color: transparent;
+    color:#e6e6e6;
 }

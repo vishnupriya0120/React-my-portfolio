@@ -4,7 +4,7 @@ import "./navbar.scss"
  
  function Navbar() {
    return (
-      <>
+      <div className='container'>
         <nav className = "navbar">
           <Link to="/home" className='link'>Logo</Link>
             <ul>
@@ -22,7 +22,7 @@ import "./navbar.scss"
               </li>
             </ul>
         </nav>
-      </>
+      </div>
    )
  }
  

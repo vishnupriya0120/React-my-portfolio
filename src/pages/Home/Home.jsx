@@ -15,10 +15,11 @@ function Home() {
   return (
     <div className='home'>
       <Navbar/>
-      <div className="container">
-        <div className='home-content'>
+      <div className="home-content">
+        <div className='container'> 
+        <SocialIconsContainer/>
           <div className="icon-text-container">
-            <SocialIconsContainer/>
+           
             <div className="home-text"> 
               <h2>HELLO, MY NAME IS</h2>
               <h1>VISHNUPRIYA.</h1>

@@ -1,11 +1,16 @@
 import React from 'react'
+import Form from '../../components/Form/Form'
 import "./contact.scss"
-function Contact() {
+const Contact=()=> {
+  const handleFormSubmit = (formData) => {
+    console.log(formData);
+  };
   return (
     <div className='contact-container'>
       <h2>GET IN TOUCH</h2>
       <div className="container">
-        
+
+        <Form onSubmit={handleFormSubmit}/>
       </div>
       
     </div>

@@ -40,5 +40,5 @@ Button.propTypes = {
 Button.defaultProps = {
   btnSize: 'sm',
   btnColor: 'primary',
-  btnStyle: 'solid'
+  btnStyle: 'outline'
 };
