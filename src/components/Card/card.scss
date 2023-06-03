@@ -13,6 +13,9 @@
         font-size:20px;
         color:#8a8a8a;
         font-weight: 500;
+        @media (max-width:$sm) {
+            font-size: 15px;
+        }
     }
     p{
         font-size: 16px;

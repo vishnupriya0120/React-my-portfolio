@@ -8,18 +8,19 @@ import Services from '../Services/Services';
 import Work from '../Work/Work';
 import Contact from '../Contact/Contact';
 import MyImage from '../../images/myimage.png';
+import { Element } from 'react-scroll';
 import  "./home.scss"
 
 
 function Home() {
   return (
-    <div className='home'>
+    <div className='home' id='home'>
       <Navbar/>
       <div className="home-content">
         <div className='container'> 
         <SocialIconsContainer/>
-          <div className="icon-text-container">
-           
+        <div className="text-image-container">
+        <div className="icon-text-container">
             <div className="home-text"> 
               <h2>HELLO, MY NAME IS</h2>
               <h1>VISHNUPRIYA.</h1>
@@ -27,17 +28,33 @@ function Home() {
               <Button label="Let's Talk"/>
             </div>
           </div>
-          {/* <div className="image-container">
+          <div className="image-container">
             <div className="profile-image">
               <ImageComponent image={MyImage} className="image-style" />
             </div>
-          </div> */}
+          </div>
+        </div>
+          
+        </div>
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
         </div>
       </div>
-      <About/>
-      <Services/>
-      <Work/>
-      <Contact/>
+      <Element name='about'>
+        <About/>
+      </Element>
+      <Element name='services'>
+         <Services/>
+      </Element>
+      <Element name='work'>
+        <Work/>
+      </Element>
+      <Element name='contact'>
+        <Contact/>
+      </Element>
+      
     </div>
   )
 }

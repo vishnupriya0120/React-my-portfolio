@@ -7,10 +7,12 @@ function Button({
   label,
   btnColor,
   btnStyle,
+  btnHover,
  })
 {
   const classes = [
     Styles.button,
+    Styles[btnHover],
     Styles[btnSize],
     Styles[btnColor],
     Styles[btnStyle],

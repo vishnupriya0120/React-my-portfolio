@@ -1,59 +1,178 @@
 @import "../../style.scss";
 
-.navbar{
-    position: fixed;
-    top: 0;
+// .navbar{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     z-index: 999;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 25px 30px;
+//     background: #171f34;
+//     @media (max-width:$sm){
+//       flex-direction: column;
+//       padding:25px 0;
+//     }
+//     .responsive_nav{
+//        @media only screen and (max-width:1024px){
+//         transform: none;
+//        }
+//     }
+    
+//     ul{
+//       display: flex;
+//       @media only screen and (max-width:1024px){
+//         flex-direction: column;
+//         gap:1.5rem;
+//         align-items: center;
+//         justify-content: center;
+//         transition: 1s;
+//         transform: translateY(-100vh);
+//       }
+//       .item{
+//         list-style-type: none;
+//         margin: 0 110px;
+//         @media screen and (max-width:1400px) {
+//           margin: 0 80px;
+          
+//         }
+//         @media (max-width:$lg) {
+//           margin: 0 40px;
+//         }
+//         @media (max-width:$sm){
+//           margin: 10px 20px;
+//         }
+//       }
+//     .link{
+//       color:#6dcabf;
+//      font-size: 16px;
+//      font-family: 'Roboto Mono', monospace;
+//      text-decoration: none;
+//      margin: 0;
+//      @media screen and (max-width:1400px) {
+//       font-size: 15px;
+      
+//     }
+//      @media (max-width:$md){
+//       font-size: 14px;
+//     }
+//      @media (max-width:$sm){
+//         padding:0 20px;
+//       }
+//     }
+//   }
+
+// }
+
+
+
+:root {
+	--mainColor:#171f34;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #e6e6e6;
+	--textColor:#6dcabf;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+  position: fixed;
+  top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 30px;
-    background: #171f34;
-    @media (max-width:$sm){
-      flex-direction: column;
-      padding:25px 0;
-    }
-    
-    ul{
-      display: flex;
-      @media (max-width:$sm){
-        flex-direction: column;
-        padding:20px 0;
-        display: none;
-      }
-      .item{
-        list-style-type: none;
-        margin: 0 110px;
-        @media screen and (max-width:1400px) {
-          margin: 0 80px;
-          
-        }
-        @media (max-width:$lg) {
-          margin: 0 40px;
-        }
-        @media (max-width:$sm){
-          margin: 10px 20px;
-        }
-      }
-    .link{
-      color:#6dcabf;
-     font-size: 16px;
-     font-family: 'Roboto Mono', monospace;
+}
+
+nav a {
+	margin: 0 110px;
+	color: var(--textColor);
+	text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
      text-decoration: none;
-     margin: 0;
      @media screen and (max-width:1400px) {
-      font-size: 15px;
-      
+      font-size: 15px; 
+      margin: 0 40px;
     }
-     @media (max-width:$md){
+    @media (max-width:$lg){
+      margin: 0 80px;
       font-size: 14px;
     }
-     @media (max-width:$sm){
-        padding:0 20px;
-      }
+    @media screen and (max-width:1100px) {
+      margin:0 40px;
+      
     }
-  }
+    @media (max-width:$sm){
+        padding:0 20px;
+        margin: 10px 20px;
+    }
+}
 
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	// visibility: hidden;
+	// opacity: 0;
+  display: none;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		// visibility: visible;
+		// opacity: 1;
+    display: block;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+    z-index: 999;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
 }
  

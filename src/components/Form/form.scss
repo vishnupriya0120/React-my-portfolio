@@ -24,16 +24,74 @@
         }
 
         button{
+            position: relative;
+            top: 40px;
+            letter-spacing: 2px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             font-family: 'Roboto Mono', monospace;
             background: transparent;
             border: 1px solid #6dcabf;
-            width:30%;
+            width:100%;
+            max-width: 250px;
             font-size: 17px;
             font-weight: bold;
             color:#e6e6e6;
             margin: 0 auto;
             padding: 10px 15px;
             border-radius: 5px;
+            overflow: hidden!important;
+            transition: all .3s ease-in-out;
+            background: transparent!important;
+            z-index:10;
+            @media screen and (max-width:565px) {
+                font-size: 14px;
+                
+            }
+        }
+        button:hover{
+            border: 1px solid #071982;
+              color: #80ffd3!important;
+        }
+        button::before {
+            content: '';
+            width: 0%;
+            height: 100%;
+            display: block;
+            background: #071982;
+            position: absolute;
+            transform: skewX(-20deg);   
+            left: -10%;
+            opacity: 1;
+            top: 0;
+            z-index: -12;
+          transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+               box-shadow:2px 0px 14px rgba(0,0,0,.6);
+          } 
+        
+        button::after {
+            content: '';
+            width: 0%;
+            height: 100%;
+            display: block;
+            background: #80ffd3;
+            position: absolute;
+            transform: skewX(-20deg);   
+            left: -10%;
+            opacity: 0;
+            top: 0;
+            z-index: -15;
+            transition: all .4s cubic-bezier(.2,.95,.57,.99);
+            box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+        }
+        button:hover::before, .button:hover::before{
+            opacity:1;
+            width: 116%;
+        }
+        button:hover::after, .button:hover::after{
+            opacity:1;
+            width: 120%;
         }
    }
 }
