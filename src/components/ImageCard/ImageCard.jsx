@@ -11,14 +11,14 @@ const ImageCard = ({children,link,text}) =>{
             setIsHovered(false);
         };
     return(
-        <div className="imagecard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="imagecard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
             {React.cloneElement(children, {
                 className: `image ${children.props.className}`,
             })}
             {isHovered && (
                 <div className="overlay">
                 <p className="text">{text}</p>
-                <a href={link} className="link">Learn More</a>
+                <a href={link} className="link">View more</a>
             </div>
             )}
         </div>

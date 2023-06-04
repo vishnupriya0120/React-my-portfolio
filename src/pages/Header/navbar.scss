@@ -1,72 +1,5 @@
 @import "../../style.scss";
 
-// .navbar{
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     z-index: 999;
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 25px 30px;
-//     background: #171f34;
-//     @media (max-width:$sm){
-//       flex-direction: column;
-//       padding:25px 0;
-//     }
-//     .responsive_nav{
-//        @media only screen and (max-width:1024px){
-//         transform: none;
-//        }
-//     }
-    
-//     ul{
-//       display: flex;
-//       @media only screen and (max-width:1024px){
-//         flex-direction: column;
-//         gap:1.5rem;
-//         align-items: center;
-//         justify-content: center;
-//         transition: 1s;
-//         transform: translateY(-100vh);
-//       }
-//       .item{
-//         list-style-type: none;
-//         margin: 0 110px;
-//         @media screen and (max-width:1400px) {
-//           margin: 0 80px;
-          
-//         }
-//         @media (max-width:$lg) {
-//           margin: 0 40px;
-//         }
-//         @media (max-width:$sm){
-//           margin: 10px 20px;
-//         }
-//       }
-//     .link{
-//       color:#6dcabf;
-//      font-size: 16px;
-//      font-family: 'Roboto Mono', monospace;
-//      text-decoration: none;
-//      margin: 0;
-//      @media screen and (max-width:1400px) {
-//       font-size: 15px;
-      
-//     }
-//      @media (max-width:$md){
-//       font-size: 14px;
-//     }
-//      @media (max-width:$sm){
-//         padding:0 20px;
-//       }
-//     }
-//   }
-
-// }
-
-
-
 :root {
 	--mainColor:#171f34;
 	--mainColorLight: #5767aa;
@@ -82,8 +15,8 @@ header {
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
-  position: fixed;
-  top: 0;
+  	position: fixed;
+  	top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
@@ -93,9 +26,9 @@ nav a {
 	margin: 0 110px;
 	color: var(--textColor);
 	text-decoration: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: 'Roboto Mono', monospace;
+  	cursor: pointer;
+  	font-size: 16px;
+  	 font-family: 'Roboto Mono', monospace;
      text-decoration: none;
      @media screen and (max-width:1400px) {
       font-size: 15px; 
@@ -126,9 +59,7 @@ header .nav-btn {
 	border: none;
 	outline: none;
 	color: var(--textColor);
-	// visibility: hidden;
-	// opacity: 0;
-  display: none;
+    display: none;
 	font-size: 1.8rem;
 }
 
@@ -140,8 +71,6 @@ nav {
 
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
-		// visibility: visible;
-		// opacity: 1;
     display: block;
 	}
 
@@ -158,7 +87,7 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColor);
 		transition: 1s;
-    z-index: 999;
+    	z-index: 999;
 	}
 
 	header .responsive_nav {
@@ -169,10 +98,6 @@ nav {
 		position: absolute;
 		top: 2rem;
 		right: 2rem;
-	}
-
-	nav a {
-		font-size: 1.5rem;
 	}
 }
  

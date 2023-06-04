@@ -9,8 +9,9 @@ import Work from '../Work/Work';
 import Contact from '../Contact/Contact';
 import MyImage from '../../images/myimage.png';
 import { Element } from 'react-scroll';
-import  "./home.scss"
+import Footer from '../../components/Footer/Footer';
 
+import  "./home.scss"
 
 function Home() {
   return (
@@ -19,22 +20,21 @@ function Home() {
       <div className="home-content">
         <div className='container'> 
         <SocialIconsContainer/>
-        <div className="text-image-container">
-        <div className="icon-text-container">
-            <div className="home-text"> 
-              <h2>HELLO, MY NAME IS</h2>
-              <h1>VISHNUPRIYA.</h1>
-              <p>Creative UI/UX Developer Based in india</p>
-              <Button label="Let's Talk"/>
+        <div className="text-image-container" >
+          <div className="icon-text-container">
+              <div className="home-text" data-aos="fade-up" data-aos-duration="1500"> 
+                <h2>HELLO, MY NAME IS</h2>
+                <h1>VISHNUPRIYA.</h1>
+                <p>Creative UI/UX Developer Based in india</p>
+                <Button link="" label="Let's Talk"/>
+              </div>
+            </div>
+            <div className="image-container">
+              <div className="profile-image" data-aos="fade-up" data-aos-duration="1500">
+                <ImageComponent image={MyImage} className="image-style" />
+              </div>
             </div>
           </div>
-          <div className="image-container">
-            <div className="profile-image">
-              <ImageComponent image={MyImage} className="image-style" />
-            </div>
-          </div>
-        </div>
-          
         </div>
         <div class="scroll-downs">
           <div class="mousey">
@@ -54,6 +54,7 @@ function Home() {
       <Element name='contact'>
         <Contact/>
       </Element>
+      <Footer/>
       
     </div>
   )
