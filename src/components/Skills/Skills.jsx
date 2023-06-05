@@ -8,7 +8,10 @@ const skillsData = [
   { id: 3, name: 'JavaScript/jQuery', progress: 80 },
   { id: 4, name: 'React js', progress: 60 },
 ];
-
+// const classes =[
+//   Styles[progress],
+ 
+// ]
 return (
     <div className='skills'>
       {skillsData.map((skill) => (
@@ -17,9 +20,11 @@ return (
           <div className="progress-bar">
             <div className="progress" style={{ width: `${skill.progress}%` }}></div>
           </div>
+          {/* <ProgressBar/> */}
         </div>
       ))}
     </div>
   );
 };
 export default Skills
+

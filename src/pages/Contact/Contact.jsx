@@ -6,7 +6,7 @@ const Contact=()=> {
     console.log(formData);
   };
   return (
-    <div className='contact-container'>
+    <div className='contact-container' id='contact'>
       <h2>GET IN TOUCH</h2>
       <div className="container">
 

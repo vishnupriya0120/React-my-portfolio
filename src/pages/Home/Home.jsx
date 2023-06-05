@@ -26,7 +26,7 @@ function Home() {
                 <h2>HELLO, MY NAME IS</h2>
                 <h1>VISHNUPRIYA.</h1>
                 <p>Creative UI/UX Developer Based in india</p>
-                <Button link="" label="Let's Talk"/>
+                <a href="#contact"><Button link="" label="Let's Talk"/></a>
               </div>
             </div>
             <div className="image-container">

@@ -8,7 +8,6 @@ function Footer() {
             <div className="footer-content">
                 <p>&copy;2023 VISHNUPRIYA. ALL RIGHTS RESERVED</p>
             </div>
-            
         </div>
     </div>
   )
