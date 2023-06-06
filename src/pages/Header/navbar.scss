@@ -20,6 +20,15 @@ header {
     left: 0;
     width: 100%;
     z-index: 999;
+	img{
+		max-width: 100px;
+	}
+	@media (max-width:575px) {
+		padding: 0 1rem;
+		img{
+			max-width: 85px;
+		}	
+	}
 }
 
 nav a {
@@ -35,12 +44,11 @@ nav a {
       margin: 0 40px;
     }
     @media (max-width:$lg){
-      margin: 0 80px;
+      margin: 0 60px;
       font-size: 14px;
     }
     @media screen and (max-width:1100px) {
       margin:0 40px;
-      
     }
     @media (max-width:$sm){
         padding:0 20px;

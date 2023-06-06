@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-scroll';
+import Logo from "../../images/logo.png";
 import "./navbar.scss"
 
 
@@ -16,7 +17,7 @@ function Navbar() {
 
 	return (
 		<header>
-			<Link to="home" className="link" smooth={true} duration={500} ><h3>LOGO</h3></Link>
+			<Link to="home" className="link" smooth={true} duration={500} ><img src={Logo} alt=""></img></Link>
 			<nav ref={navRef}>
 				<Link to="about" className="link" smooth={true} duration={500} >01. About</Link>
 				<Link to="services"className="link" smooth={true} duration={500} >02. Services</Link>

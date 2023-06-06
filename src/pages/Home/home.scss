@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -59,12 +60,13 @@ h3{
         line-height: 25px;
         @media (max-width:$lg) {
             font-size: 15px;
-            
         }
         @media (max-width:$md) {
             font-size: 14px;
             line-height: 20px;
-            
+        }
+        @media (max-width:$xs) {
+            font-size: 13px;
         }
  }
 
@@ -76,7 +78,7 @@ h3{
        display: flex;
        width:100%;
        margin: 0 auto;
-       max-height: 100vh;
+       min-height: 100vh;
        align-items: center;
        padding: 110px 0;
        @media (max-width:$md) {
@@ -99,15 +101,14 @@ h3{
             justify-content: space-between;
             @media (max-width:$md) {
                 width:100%;
-                height: 50vh;
+                height:unset;
             }
             @media (max-width:$sm) {
                 width:100%;
                 height:40vh;
-                
             }
             @media (max-width:$xs) {
-                height: 35vh;
+                height:50vh;
             }
         }
     }
@@ -117,12 +118,14 @@ h3{
         flex-direction: column;
         justify-content: center;
         @media (max-width:$md) {
-            padding: 30px 50px 0;
+            padding: 30px 50px 70px;
             justify-content:unset;
         }
         @media (max-width:$sm) {
             padding: 20px 50px;
-            
+        }
+        @media (max-width:$xs) {
+            padding: 40px 0 20px 50px;
         }
     
          h2{
@@ -161,6 +164,9 @@ h3{
         }
         @media (max-width:$sm) {
             font-size: 14px;
+        }
+        @media (max-width:$xs) {
+            font-size: 13px;
         }
       }
     }

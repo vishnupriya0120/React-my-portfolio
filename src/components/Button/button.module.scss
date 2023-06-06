@@ -34,6 +34,9 @@ $primary:#6dcabf;
             @media (max-width:1200px) {
                 font-size: 16px;
             }
+            @media (max-width:575px) {
+                margin-top: 15px;
+            }
                 &.sm {
                     width:100%;
                     max-width: 150px;

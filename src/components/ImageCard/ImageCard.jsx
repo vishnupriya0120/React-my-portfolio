@@ -1,7 +1,9 @@
 import React,{useState} from "react";
+
+import Icon from "../SocialIcons/Icon";
 import "./imagecard.scss"
 
-const ImageCard = ({children,link,text}) =>{
+const ImageCard = ({children,link,text,icon}) =>{
     const [isHovered,setIsHovered]= useState(false);
         const handleMouseEnter = () => {
             setIsHovered(true);
@@ -18,7 +20,7 @@ const ImageCard = ({children,link,text}) =>{
             {isHovered && (
                 <div className="overlay">
                 <p className="text">{text}</p>
-                <a href={link} className="link">View more</a>
+                <a href={link} className="link"><Icon icon={icon} className="imagecard-icon" /></a>
             </div>
             )}
         </div>

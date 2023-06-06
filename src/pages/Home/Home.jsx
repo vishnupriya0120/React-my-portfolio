@@ -21,14 +21,14 @@ function Home() {
         <div className='container'> 
         <SocialIconsContainer/>
         <div className="text-image-container" >
-          <div className="icon-text-container">
+          {/* <div className="icon-text-container"> */}
               <div className="home-text" data-aos="fade-up" data-aos-duration="1500"> 
                 <h2>HELLO, MY NAME IS</h2>
                 <h1>VISHNUPRIYA.</h1>
                 <p>Creative UI/UX Developer Based in india</p>
                 <a href="#contact"><Button link="" label="Let's Talk"/></a>
               </div>
-            </div>
+            {/* </div> */}
             <div className="image-container">
               <div className="profile-image" data-aos="fade-up" data-aos-duration="1500">
                 <ImageComponent image={MyImage} className="image-style" />
