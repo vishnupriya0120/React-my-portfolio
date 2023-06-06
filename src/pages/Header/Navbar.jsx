@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-scroll';
-import Logo from "../../images/logo.png";
+import Logo from "../../images/logo.svg";
 import "./navbar.scss"
 
 

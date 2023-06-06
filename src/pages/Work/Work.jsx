@@ -1,7 +1,7 @@
 import React from 'react'
-import mobile from "../../images/mobile.jpg"
-import android from "../../images/android.jpg"
-import hybrid from "../../images/hybrid.jpg"
+import mobile from "../../images/mobile.svg"
+import android from "../../images/android.svg"
+import hybrid from "../../images/hybrid.svg"
 import ImageComponent from '../../components/Image/ImageComponent'
 import ImageCard from '../../components/ImageCard/ImageCard'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
