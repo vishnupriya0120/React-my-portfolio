@@ -24,13 +24,13 @@ function Navbar() {
 				<Link to="work" className="link" smooth={true} duration={500} >03. Work</Link>
 				<Link to="contact" className="link" smooth={true} duration={500} >04. Contact</Link>
 				<button
-					className="nav-btn nav-close-btn"
+					className="nav-btn nav-close-btn" aria-label="navbtn"
 					onClick={showNavbar}>
 					<FaTimes />
 				</button>
 			</nav>
 			<button
-				className="nav-btn"
+				className="nav-btn"  aria-label="navbtn"
 				onClick={showNavbar}>
 				<FaBars />
 			</button>

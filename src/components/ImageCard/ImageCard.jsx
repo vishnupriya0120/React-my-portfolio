@@ -20,7 +20,7 @@ const ImageCard = ({children,link,text,icon}) =>{
             {isHovered && (
                 <div className="overlay">
                 <p className="text">{text}</p>
-                <a href={link} className="link"><Icon icon={icon} className="imagecard-icon" /></a>
+                <a href={link} rel="noreferrer" target="_blank" className="link"><Icon icon={icon} className="imagecard-icon" /></a>
             </div>
             )}
         </div>

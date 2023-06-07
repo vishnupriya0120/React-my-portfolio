@@ -7,7 +7,7 @@ import About from '../About/About';
 import Services from '../Services/Services';
 import Work from '../Work/Work';
 import Contact from '../Contact/Contact';
-import MyImage from '../../images/myimage.svg';
+import MyImage from '../../images/myimage.png';
 import { Element } from 'react-scroll';
 import Footer from '../../components/Footer/Footer';
 
