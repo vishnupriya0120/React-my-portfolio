@@ -35,7 +35,6 @@ const Form = ({onSubmit,className}) =>{
         <input type="text" name="name" placeholder='Name' onChange={handleChange} />
         <input type="email" name="email" placeholder='Email' onChange={handleChange} />
         <textarea name="message"  placeholder='Message' onChange={handleChange} />
-
         <button type="submit"disabled={isMessageSent === 'Message Sent'}>
           {isMessageSent}
           {/* {isMessageSent ? 'Message Sent' : 'SHOOT !'} */}
